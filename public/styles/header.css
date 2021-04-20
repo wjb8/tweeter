@@ -1,0 +1,15 @@
+header {
+  background-color: rgb(107, 107, 107);
+  background-image: url("https://www.transparenttextures.com/patterns/black-mamba.png");
+  color: azure;
+  height: 400px;
+  width: 100%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}

@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #2f3031;
+  color: azure;
+  padding: 1.5em;
+  justify-content: space-between;
+  z-index: 9;
+  
+}
+
+nav span {
+  font-family: 'Bungee Shade', cursive;
+}
+
+.fas {
+  color: red;
+  padding-left: 50%;
+  padding-right: 50%;
+}
