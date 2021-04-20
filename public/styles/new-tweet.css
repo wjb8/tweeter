@@ -5,11 +5,12 @@
   padding: 1.5em;
 }
 
-.counter {
+.ctrl {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5em;
+  font-style: italic;
 }
 
 #tweet-text {
