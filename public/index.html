@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+    <title>Tweeter</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -10,14 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -43,17 +46,15 @@
 
     <!-- Page-specific (main) content here -->
     <main>
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+      <div class="new-tweet">
         <form method="POST" action="/tweets">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+          <textarea name="text" id="tweet-text" placeholder="What's on your mind?"></textarea>
+          <div class="counter">
+            <button type="submit" id="submit-button">tweet</button>
+            <output name="counter" class="counter" for="tweet-text"><em>140</em></output>
           </div>
         </form>
-      </section>
+      </div>
     </main>
   </body>
 </html>
