@@ -4,6 +4,7 @@ header {
   color: azure;
   height: 400px;
   width: 100%;
+  margin-top: 120px;
 }
 
 .avatar {
@@ -12,4 +13,5 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  font-family: "Source Sans Pro", sans-serif;
 }
