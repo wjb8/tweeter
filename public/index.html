@@ -25,10 +25,9 @@
     
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/tweet-text.js"></script>
-    <script type="text/javascript" src="/scripts/timestamp.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
 
   <body>
@@ -52,32 +51,24 @@
     <!-- Page-specific (main) content here -->
     <main>
       <div class="new-tweet">
-        <form method="POST" action="/tweets">
+        <form method="POST" action="/tweets" id="tweet-submit">
           <textarea name="text" id="tweet-text" placeholder="What's on your mind?"></textarea>
           <div class="ctrl">
             <button type="submit" id="submit-button">tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+        <p class ="error" id="empty">Empty!</p>
+        <p class ="error" id="long">Too Long!</p>
       </div>
       
-      <article class="tweets">
-        <h3 class="header">
-          Newton
-          <p class="username">@SirIsaac</p>
-        </h3>
-        
-        <p>blah blah blah blah blahblj</p>
-        <footer class="footer">
-          <time class="timeago" datetime="17 September 2019 12:00"></time>
-          <div class="links">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
-          </div>
-        </footer>
+      <div id="tweets-container">
+      </div>
 
-      </article>
+          </footer>
+        </article>
+
+    </div>
     
     </main>
   </body>
