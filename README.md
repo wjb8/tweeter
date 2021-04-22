@@ -4,6 +4,10 @@ Tweeter is a simple, single-page Twitter clone. It utilizes Ajax requests and CS
 
 ## Screenshots
 
+!["Desktop View"](https://github.com/wjb8/tweeter/blob/master/docs/tweeter_desktop.png?raw=true)
+!["Desktop Error Message"](https://github.com/wjb8/tweeter/blob/master/docs/tweeter_desktop_error.png?raw=true)
+!["Mobile View"](https://github.com/wjb8/tweeter/blob/master/docs/tweeter_mobile.png?raw=true)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
