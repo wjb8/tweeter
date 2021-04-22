@@ -19,7 +19,7 @@ $(() => {
     <p class="username">${tweetData.user.handle}</p>
     </h3>
   
-  <p>${escape(tweetData.content.text)}</p>
+  <p class="content">${escape(tweetData.content.text)}</p>
   <footer class="footer">
     <time class="timeago" datetime=${tweetData.created_at}></time>
     <div class="links">
